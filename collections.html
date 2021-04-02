@@ -20,7 +20,8 @@
 <body>
     <h1>Games</h1>
     <i>Last updated: 02/04/2021</i>
-    <table>
+    <button onclick="sortTable()">Sort</button>
+    <table id="sortableTable">
         <tr style="text-align: center;">
             <th>Title</th>
             <th>Developer</th>
@@ -3028,6 +3029,31 @@
             <td>Epic</td>
         </tr>
     </table>
+
+    <script>
+        function sortTable() {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("sortableTable");
+            switching = true;
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[0];
+                    y = rows[i + 1].getElementsByTagName("TD")[0];
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
