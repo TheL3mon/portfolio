@@ -26,10 +26,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    pointer-events: none;
-}
-
 .headerslot {
     height: 5em;
 }
