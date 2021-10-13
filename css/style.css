@@ -77,3 +77,28 @@ a {
 .title_text{
     font-family: 'Brush Script MT', cursive;
 }
+
+.games-wrapper{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+}
+
+.games-wrapper:hover{
+    background-color: lightgray;
+}
+
+.games-left{
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.games-right{
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
