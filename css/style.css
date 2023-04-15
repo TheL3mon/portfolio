@@ -5,6 +5,12 @@ body {
     color: white;
 }
 
+ul {
+    margin-block-start: 0;
+    margin: 0;
+    padding: 0;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -19,20 +25,68 @@ body {
     background: #555;
 }
 
-#social ul li {
-    list-style-type: none;
-    -webkit-filter: invert(100%);
-    display: inline-block;
-    text-align: center;
-    align-content: center;
-    position: relative;
-    padding: 5px;
-}
-
 /* Links */
 a, a:hover, a:visited, a:active {
     color: inherit;
     text-decoration: underline;
+}
+
+/* Navigation Menu */
+nav#navmenu_wrapper {
+    text-align: center;
+}
+ul#navmenu li {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    width: 100px;
+}
+ul#navmenu li:hover {
+    background-color: #2f2f2f;
+}
+
+/* Introduction */
+#introduction_name {
+    font-size: 30px;
+    margin: 5px;
+}
+#introduction_description {
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* Content Wrapper */
+#content {
+    margin: 30px 5px 30px 5px;
+}
+
+/* Content Shelves */
+#content_shelf {
+    margin-bottom: 30px;
+}
+#content_header {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Socials */
+div#social_wrapper {
+    text-align: center;
+}
+ul#social li {
+    list-style-type: none;
+    -webkit-filter: invert(100%);
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+}
+ul#social li:hover {
+    -webkit-filter: invert(70%);
 }
 
 /* Footer */
