@@ -31,9 +31,20 @@ a, a:hover, a:visited, a:active {
     text-decoration: none;
 }
 
+/* Header */
+/*
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    width: 100%;
+}
+*/
+
 /* Navigation Menu */
 nav#navmenu_wrapper {
     text-align: center;
+    margin-top: 3vh;
 }
 ul#navmenu li {
     list-style-type: none;
@@ -48,6 +59,9 @@ ul#navmenu li {
 }
 ul#navmenu li:hover {
     background-color: #2f2f2f;
+}
+ul#navmenu li#current {
+    border: 1px solid white;
 }
 
 /* Introduction */
@@ -149,9 +163,9 @@ footer {
     ul#navmenu li {
         font-size: 4.3vw;
         padding: 1.3vh 1vw 1.3vh 1vw;
-        margin: 0.1vw;
+        margin: 0.1vw 0.1vw 1vw 0.1vw;
         border-radius: 0.5vw;
-        width: 25vw;
+        width: 35vw;
     }
 
     /* Introduction */
