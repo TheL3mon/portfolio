@@ -59,6 +59,9 @@ ul#navmenu li:hover {
     font-size: 1vw;
     margin: 0.5vw;
 }
+.introduction_highlight {
+    font-size: 1.2vw;
+}
 
 /* Content Wrapper */
 #content {
@@ -112,15 +115,70 @@ footer {
 /*#################*/
 /*Mobile and Tablet*/
 @media (min-width: 320px) and (max-width: 769px) {
-    body {
-        /*Mobile and Tablet body*/
+
+    /* Navigation Menu */
+    ul#navmenu li {
+        font-size: 4.3vw;
+        padding: 1vw;
+        margin: 0.1vw;
+        border-radius: 0.5vw;
+        width: 25vw;
+    }
+
+    /* Introduction */
+    #introduction_name {
+        font-size: 6vw;
+        margin: 0.5vw;
+    }
+    #introduction_description {
+        font-size: 3.8vw;
+        margin: 0.5vh 0.5vw 2vh 0.5vw;
+    }
+    .introduction_highlight {
+        font-size: 4vw;
+    }
+
+    /* Content Wrapper */
+    #content {
+        margin: 1vh 0.3vw 1vh 0.3vw;
+    }
+
+    /* Content Shelves */
+    #content_shelf {
+        margin: 0vh 1vw 5vh 1vw;
+        text-align: center;
+        align-content: center;
+    }
+    #content_header {
+        font-size: 4vw;
+        font-style: italic;
+        margin-bottom: 2vh;
+        text-align: left;
+    }
+    .content_image {
+        display: inline-block;
+        margin: 0vh 1vw 0vh 1vw;
+        width: 80vw;
+    }
+
+    /* Socials */
+    ul#social li {
+        padding: 1vw;
+    }
+    .social_icon {
+        width: 10vw;
+    }
+
+    /* Footer */
+    footer {
+        color: #757575;
+        text-align: center;
+        font-size: 3vw;
     }
 }
 
 /*#######*/
 /*Desktop*/
 @media (min-width: 770px) {
-    body {
-        /*Desktop body*/
-    }
+
 }
