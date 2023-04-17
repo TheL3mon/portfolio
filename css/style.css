@@ -108,6 +108,9 @@ ul#navmenu li#current {
 .content_readmore:hover > .content_readmorepanel {
     visibility: visible;
 }
+.content_readmore:hover > .content_projecttitle {
+    visibility: visible;
+}
 .content_readmore:hover > .content_image {
     filter: brightness(50%);
 }
@@ -127,6 +130,16 @@ ul#navmenu li#current {
 }
 .content_readmorepanel:hover {
     background-color: #e9b227;
+}
+.content_projecttitle {
+    visibility: hidden;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    font-size: 3vh;
+    color: white;
+    background-color: #1f1f1f;
+    padding: 0.3vw;
 }
 
 /* Socials */
@@ -208,6 +221,12 @@ footer {
         padding: 1.5vw 0.7vw 1.5vw 0.7vw;
         border-radius: 1vw;
         width: 35vw;
+    }
+    .content_projecttitle {
+        top: 2vh;
+        left: 4vw;
+        font-size: 3vh;
+        padding: 0.5vw;
     }
 
     /* Socials */
