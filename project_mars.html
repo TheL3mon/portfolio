@@ -42,17 +42,48 @@
         <div id="content_shelf">
             <p id="content_header">Mars Landscape</p>
             <img src="images/projects/mars/mainshot.gif" class="project_image" style="width: 45vw;">
-            <p class="project_bodytext">This project is one of my creations made in <i>World&nbsp;Machine</i> and <i>Unreal&nbsp;Engine</i>.<br>
-            My plan was to recreate a planet's surface in a stylized way.<br>
-            I chose Mars, as it's got a nice color palette and its terrain has strong signs of erosion that I wanted to be challenged by.</p>
+            <p class="project_bodytext">
+                This project is one of my creations made in <i>World&nbsp;Machine</i> and <i>Unreal&nbsp;Engine</i>.<br>
+                My plan was to recreate a planet's surface in a stylized way.<br>
+                I chose Mars, as it's got a nice color palette and its terrain has strong signs of erosion that I wanted to be challenged by.
+            </p>
 
-            <p class="project_bodytext">I started out with a basic perlin noise pattern, which I adjusted through curves to achieve the barren look of Mars' landscape.<br>
-            By looking at photographs of the planet's surface, I could see that while it is relatively flat in general, there are hills and mountains that protrude robustly.</p>
+            <p class="project_bodytext">
+                I started out with a basic perlin noise pattern, which I adjusted through curves to achieve the barren look of Mars' landscape.<br>
+                By looking at photographs of the planet's surface, I could see that while it is relatively flat in general, there are hills and mountains that protrude robustly.
+            </p>
             <div>
                 <img src="images/projects/mars/WM_Mars_Process1_before.png" class="project_image" style="width: 30vw;">
                 <img src="images/projects/mars/WM_Mars_Process1.png" class="project_image" style="width: 45vw;">
             </div>
             <p class="project_bodytext">The mountains of Mars are full of ridges and talus slopes as well, which I added through erosion and thermal wheathering as the next steps.</p>
+
+            <div>
+                <img src="images/projects/mars/WM_Mars_Process2.png" class="project_image" style="width: 37vw;">
+                <img src="images/projects/mars/WM_Mars_Process3.png" class="project_image" style="width: 35vw;">
+            </div>
+            <p class="project_bodytext">
+                The lower parts of Mars' landscape are full of vein-like formations created by the former presence of water.<br>
+                To achieve this look, I created a height-based mask to select the flat landscape between the mountains,<br>making sure that it bleeds a little bit into the foot of the mountains too, to create a smoother blend between the landforms.
+            </p>
+
+            <div>
+                <img src="images/projects/mars/WM_Mars_Process4_before.png" class="project_image" style="width: 35vw;">
+                <img src="images/projects/mars/WM_Mars_Process4.png" class="project_image" style="width: 35vw;">
+            </div>
+            <p class="project_bodytext">
+                Since the planet's water contained salt before it evaporated, the salt is now covering these lower parts of the landscape.<br>
+                To achieve this look, I blended in the previously created mask layer with the albedo of the surface, lightening these lower areas in the process.
+            </p>
+
+            <div>
+                <img src="images/projects/mars/WM_Mars_Process5.png" class="project_image" style="width: 35vw;">
+                <img src="images/projects/mars/WM_Mars2.png" class="project_image" style="width: 35vw;">
+            </div>
+            <p class="project_bodytext">The final result in <i>World Machine</i>.</p>
+
+            <img src="images/projects/mars/UE_Mars.png" class="project_image" style="width: 50vw;">
+            <p class="project_bodytext">Ported over to <i>Unreal Engine</i>, where I added volumetric fog, procedural athmosphere, and post processing effects to render the final look.</p>
         </div>
     </div>
 
