@@ -80,6 +80,7 @@ ul#navmenu li#current {
 /* Content Wrapper */
 #content {
     margin: 5vh 0.3vw 5vh 0.3vw;
+    border-top: 1px dashed white;
 }
 
 /* Content Shelves */
@@ -98,12 +99,14 @@ ul#navmenu li#current {
     display: inline-block;
     margin: 0vh 1vw 0vh 1vw;
     width: 24vw;
+    border: 3px solid white;
 }
 .content_readmore {
     display: inline-block;
     position: relative;
     text-align: center;
     color: black;
+    margin-bottom: 2vh;
 }
 .content_readmore:hover > .content_readmorepanel {
     visibility: visible;
@@ -227,6 +230,11 @@ footer {
         left: 4vw;
         font-size: 3vh;
         padding: 0.5vw;
+    }
+
+    /* Project */
+    .project_image {
+        width: 100% !important;
     }
 
     /* Socials */
