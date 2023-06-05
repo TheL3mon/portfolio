@@ -145,6 +145,11 @@ ul#navmenu li#current {
     padding: 0.3vw;
 }
 
+/* Project */
+.project_bodytext {
+    font-size: 2vh;
+}
+
 /* Socials */
 div#social_wrapper {
     text-align: center;
