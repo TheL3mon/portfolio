@@ -152,6 +152,10 @@ ul#navmenu li#current {
 .project_link:hover {
     color: gold;
 }
+.project_video {
+    width: 45vw;
+    height: 51.5vh;
+}
 
 /* Socials */
 div#social_wrapper {
@@ -246,6 +250,10 @@ footer {
     }
     .project_icon {
         width: 3vw !important;
+    }
+    .project_video {
+        width: 100%;
+        height: 25vh;
     }
 
     /* Socials */
