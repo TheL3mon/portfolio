@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <meta name="description" content="The home of a pizza enthusiast!">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lemon's Corner'" />
+    <meta property="og:description" content="The home of a pizza enthusiast!" />
+    <meta property="og:url" content="https://daneck.carrd.co" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="" />
+    <meta property="og:site_name" content="Lemon's Corner'" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!--<header>-->
+        <p id="introduction">
+            <p id="introduction_name">Daniel Eckmann</p>
+            <p id="introduction_description"><b class="introduction_highlight">Technical Artist</b> and <b class="introduction_highlight">Animator</b> with a passion for abridging the worlds of design and tech.<br><i>Fresh graduate with a Master's in Games, artist with a strong technical background.</i>
+        </p>
+
+        <nav id="navmenu_wrapper">
+            <ul id="navmenu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="aboutme.html"><li>About Me</li></a>
+                <a href="otherworks.html"><li>Other Works</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+    <!--</header>-->
+
+    <div id="content">
+        <div id="content_shelf">
+            <p id="content_header">Journey Sand</p>
+            <div>
+                <img src="images/projects/journey_sand/mainshot2.png" class="project_image" style="width: 18.5vw;">
+                <img src="images/projects/journey_sand/mainshot.png" class="project_image" style="width: 30vw;">
+            </div>
+            <p class="project_bodytext">
+                For the final exam of the Graphics&nbsp;Programming course at ITU, I chose to recreate the sand shader of <i>Journey</i>.<br>
+                This project was made with pure C++ and GLSL (OpenGL). You can read my paper <a href="Journey_Sand_in_OpenGL.pdf" target="_blank" class="project_link">[<img src="images/pdf.png" class="project_icon" style="width: 0.7vw;">&nbsp;here]</a>.
+            </p>
+
+            <p class="project_bodytext">
+                As the first step, I looked at <a href="https://www.gdcvault.com/play/1017742/Sand-Rendering-in" target="_blank" class="project_link">[this]</a> GDC talk by John Edwards of <i>thatgamecompany</i><br>
+                to analyze the approach the developers took when creating the original shader for <i>Journey</i>.<br>
+                They broke down the technique into various layers, such as the diffuse layer, rim lighting, or the ocean specular.<br>
+                This was incredibly helpful, as I got to understand what went into the various elements of their approach.
+            </p>
+        </div>
+    </div>
+
+    <div id="social_wrapper">
+        <ul id="social">
+            <li id="email"><a href="mailto:daniel.eckmann07@gmail.com" target="_blank"><img src="images/socials/email.png" class="social_icon"></a></li>
+            <li id="linkedin"><a href="https://www.linkedin.com/in/dan-eck/" target="_blank"><img src="images/socials/linkedin.png" class="social_icon"></a></li>
+            <li id="artstation"><a href="https://www.artstation.com/lemondraws" target="_blank"><img src="images/socials/artstation.png" class="social_icon"></a></li>
+            <li id="itch"><a href="https://l3mon.itch.io/" target="_blank"><img src="images/socials/itch.svg" class="social_icon"></a></li>
+        </ul>
+    </div>
+    <footer>
+        Copyright &copy; <script>document.write(new Date().getFullYear());</script>. All rights reserved.
+    </footer>
+</body>
+</html>

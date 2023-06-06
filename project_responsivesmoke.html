@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <meta name="description" content="The home of a pizza enthusiast!">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lemon's Corner'" />
+    <meta property="og:description" content="The home of a pizza enthusiast!" />
+    <meta property="og:url" content="https://daneck.carrd.co" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="" />
+    <meta property="og:site_name" content="Lemon's Corner'" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!--<header>-->
+        <p id="introduction">
+            <p id="introduction_name">Daniel Eckmann</p>
+            <p id="introduction_description"><b class="introduction_highlight">Technical Artist</b> and <b class="introduction_highlight">Animator</b> with a passion for abridging the worlds of design and tech.<br><i>Fresh graduate with a Master's in Games, artist with a strong technical background.</i>
+        </p>
+
+        <nav id="navmenu_wrapper">
+            <ul id="navmenu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="aboutme.html"><li>About Me</li></a>
+                <a href="otherworks.html"><li>Other Works</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+    <!--</header>-->
+
+    <div id="content">
+        <div id="content_shelf">
+            <p id="content_header">Responsive Smoke</p>
+            <img src="images/projects/cs_smoke/mainshot.gif" class="project_image" style="width: 45vw;">
+            <p class="project_bodytext">
+                In this project I attempted to create responsive smoke inspired by <a href="https://www.youtube.com/watch?v=_y9MpNcAitQ" target="_blank" class="project_link">[this trailer]</a> of <i>Counter-Strike 2</i>.<br>
+                I used the Niagara particle system and the shader graph of <i>Unreal&nbsp;Engine</i>.
+            </p>
+
+            <div>
+                <img src="images/projects/cs_smoke/CS_Process2.png" class="project_image" style="width: 45vw;">
+                <img src="images/projects/cs_smoke/CS_Process1.png" class="project_image" style="width: 25vw;">
+            </div>
+            <p class="project_bodytext">
+                The smoke is instantiated as a collection of geometrical meshes.<br>
+                I chose cubes as they fill blocky environments more accurately, such as the corners of rooms or buildings.<br>
+                The smoke's volume is defined by the number of blocks instantiated and their density. These create the radius of the area they attempt to fill.
+            </p>
+
+            <img src="images/projects/cs_smoke/CS_Process4.png" class="project_image" style="width: 30vw;">
+            <p class="project_bodytext">
+                In order to simulate the dynamic dispersion of smoke, I'm setting the collision handling override to automatic adjustment,<br>
+                which makes sure that smoke blocks that would spawn inside shapes get moved out to a free area instead.
+            </p>
+
+            <img src="images/projects/cs_smoke/CS_smoke.gif" class="project_image" style="width: 30vw;">
+            <p class="project_bodytext">
+                The smoke itself was created with the Niagara particle system.<br>
+                To simulate light scattering and smoke density visually, the material of the particles has alpha blending enabled.
+            </p>
+
+            <div>
+                <img src="images/projects/cs_smoke/CS_Process3.png" class="project_image" style="width: 30vw;">
+                <img src="images/projects/cs_smoke/1_highlighted.png" class="project_image" style="width: 34vw;">
+            </div>
+            <p class="project_bodytext">
+                Furhtermore, to ensure that the billboards don't create artifacts when interacting with surfaces, I'm utilizing depth fade.<br>
+                This node uses the depth buffer to calculate a treshold where the billboards would fade out seamlessly.
+            </p>
+
+            <div>
+                <img src="images/projects/cs_smoke/CS_smoke2.gif" class="project_image" style="width: 30vw;"><br>
+                <img src="images/projects/cs_smoke/2.png" class="project_image" style="width: 18vw;">
+                <img src="images/projects/cs_smoke/3.png" class="project_image" style="width: 34vw;">
+            </div>
+            <p class="project_bodytext">
+                The final result.
+            </p>
+        </div>
+    </div>
+
+    <div id="social_wrapper">
+        <ul id="social">
+            <li id="email"><a href="mailto:daniel.eckmann07@gmail.com" target="_blank"><img src="images/socials/email.png" class="social_icon"></a></li>
+            <li id="linkedin"><a href="https://www.linkedin.com/in/dan-eck/" target="_blank"><img src="images/socials/linkedin.png" class="social_icon"></a></li>
+            <li id="artstation"><a href="https://www.artstation.com/lemondraws" target="_blank"><img src="images/socials/artstation.png" class="social_icon"></a></li>
+            <li id="itch"><a href="https://l3mon.itch.io/" target="_blank"><img src="images/socials/itch.svg" class="social_icon"></a></li>
+        </ul>
+    </div>
+    <footer>
+        Copyright &copy; <script>document.write(new Date().getFullYear());</script>. All rights reserved.
+    </footer>
+</body>
+</html>
