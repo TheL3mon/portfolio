@@ -173,6 +173,7 @@ ul#navmenu li#current {
 /* Socials */
 div#social_wrapper {
     text-align: center;
+    position: relative;
 }
 ul#social li {
     list-style-type: none;
@@ -194,6 +195,14 @@ footer {
     color: #757575;
     text-align: center;
     font-size: 1vw;
+}
+.footer_imageLeft {
+    left: 0;
+    position: absolute;
+}
+.footer_imageRight {
+    right: 0;
+    position: absolute;
 }
 
 /*#################*/
