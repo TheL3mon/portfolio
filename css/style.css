@@ -158,6 +158,13 @@ ul#navmenu li#current {
 .project_link:hover {
     color: gold;
 }
+.project_email {
+    color: gold;
+    font-size: 3vh;
+}
+.project_email:hover {
+    color: goldenrod;
+}
 .project_video {
     width: 45vw;
     height: 51.5vh;
