@@ -149,6 +149,12 @@ ul#navmenu li#current {
 .project_bodytext {
     font-size: 2vh;
 }
+.project_bodytextleft {
+    font-size: 2vh;
+    text-align: left;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
 .project_link:hover {
     color: gold;
 }
